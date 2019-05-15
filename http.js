@@ -1,8 +1,10 @@
+const httpServer = require('http-server')
+,path = require('path');
 
-var http = require('http');
+var pathToHtmlAndJsFiles = path.join(__dirname, './');
+var server = httpServer.createServer({ root: pathToHtmlAndJsFiles});
 
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('Hello'); //write a response to the client
-  res.end(); //end the response
-}).listen(8080); //the server object listens on port 8080
+console.log(pathToHtmlAndJsFiles )
+server.listen(3000, function(){
+  console.log('Yes boy, I am on');
+});

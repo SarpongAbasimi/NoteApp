@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/SarpongAbasimi/NoteApp/issues"
   },
-  "homepage": "https://github.com/SarpongAbasimi/NoteApp#readme"
+  "homepage": "https://github.com/SarpongAbasimi/NoteApp#readme",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
